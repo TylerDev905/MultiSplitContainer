@@ -1,8 +1,6 @@
 using System.Windows.Forms;
 using System.Collections.Generic;
 
-namespace MipsIde
-{
     class MultiSplitContainer : SplitContainer
     {
         private List<Control> _controls;
@@ -58,4 +56,3 @@ namespace MipsIde
         }
 
     }
-}
