@@ -54,9 +54,9 @@ class MultiSplitContainer : SplitContainer
     }
 
     /// <summary>
-    /// # Will return back the container of the index.
+    /// # Will return back the child container of the index supplied.
     /// </summary>
-    /// <param name="index">This is the control index.</param>
+    /// <param name="index">This is the child container index. Each control has it's own split container.</param>
     public SplitContainer GetChildContainer(int index)
     {
         return childContainers[index];
