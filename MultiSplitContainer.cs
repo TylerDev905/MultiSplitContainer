@@ -26,6 +26,9 @@ class MultiSplitContainer : SplitContainer
 
     public List<SplitContainer> childContainers = new List<SplitContainer>();
 
+    /// <summary>
+    /// # Will take the controls list and setup the multi split
+    /// </summary>
     public void Init()
     {
         int controlCount = _controls.Count;
@@ -50,11 +53,19 @@ class MultiSplitContainer : SplitContainer
         }
     }
 
+    /// <summary>
+    /// # Will return back the container of the index.
+    /// </summary>
+    /// <param name="index">This is the control index.</param>
     public SplitContainer GetChildContainer(int index)
     {
         return childContainers[index];
     }
 
+    /// <summary>
+    /// # Will return the panel of the control by the index supplied.
+    /// </summary>
+    /// <param name="index">control index</param>
     public Panel GetPanel(int index)
     {
         if (index == 0)
